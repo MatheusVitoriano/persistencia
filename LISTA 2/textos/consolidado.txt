@@ -1,0 +1,17 @@
+Resumo Consolidado dos Arquivos
+
+Resumo do arquivo: C:\Users\mathe\Documents\PERSISTÊNCIA\textos\arquivo1.txt
+Linhas válidas: 3
+Total de palavras: 7
+Total de caracteres: 54
+
+Resumo do arquivo: C:\Users\mathe\Documents\PERSISTÊNCIA\textos\arquivo2.txt
+Linhas válidas: 4
+Total de palavras: 9
+Total de caracteres: 67
+
+Resumo do arquivo: C:\Users\mathe\Documents\PERSISTÊNCIA\textos\arquivo3.txt
+Linhas válidas: 5
+Total de palavras: 14
+Total de caracteres: 89
+
