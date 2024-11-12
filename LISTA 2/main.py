@@ -50,18 +50,19 @@ def compactar_arquivo(arquivo_consolidado):
     print(f"Arquivo compactado com sucesso: {caminho_zip}")
 
 # Caminho do arquivo consolidado
-arquivo_consolidado = "C:\\Users\\mathe\\Documents\\PERSISTÊNCIA\\textos\\consolidado.txt"
+arquivo_consolidado = "C:\\Users\\mathe\\Documents\\PERSISTÊNCIA\\LISTA 2\\textos\\consolidado.txt"
 
 # Certifique-se de limpar o arquivo consolidado antes de iniciar, caso seja necessário
 with open(arquivo_consolidado, 'w', encoding='utf-8') as file:
     file.write("Resumo Consolidado dos Arquivos\n\n")
 
 # Processa os arquivos
-processar_arquivo("C:\\Users\\mathe\\Documents\\PERSISTÊNCIA\\textos\\arquivo1.txt", arquivo_consolidado)
-processar_arquivo("C:\\Users\\mathe\\Documents\\PERSISTÊNCIA\\textos\\arquivo2.txt", arquivo_consolidado)
-processar_arquivo("C:\\Users\\mathe\\Documents\\PERSISTÊNCIA\\textos\\arquivo3.txt", arquivo_consolidado)
+processar_arquivo("C:\\Users\\mathe\\Documents\\PERSISTÊNCIA\\LISTA 2\\textos\\arquivo1.txt", arquivo_consolidado)
+processar_arquivo("C:\\Users\\mathe\\Documents\\PERSISTÊNCIA\\LISTA 2\\textos\\arquivo2.txt", arquivo_consolidado)
+processar_arquivo("C:\\Users\\mathe\\Documents\\PERSISTÊNCIA\\LISTA 2\\textos\\arquivo3.txt", arquivo_consolidado)
 
 # Compacta o arquivo consolidado em ZIP
 compactar_arquivo(arquivo_consolidado)
+print(arquivo_consolidado)
 
 print("Processamento concluído. Arquivo consolidado compactado em ZIP.")
