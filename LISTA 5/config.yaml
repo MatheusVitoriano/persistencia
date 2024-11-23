@@ -1,0 +1,8 @@
+logging:
+  level: "INFO"  
+  file: "app.log"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+
+
+data:
+  file: "data.json" 

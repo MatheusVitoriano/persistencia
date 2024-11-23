@@ -1,0 +1,33 @@
+2024-11-22 21:52:57,104 - INFO - Arquivo JSON 'data.json' carregado com sucesso.
+2024-11-22 21:52:57,104 - INFO - Processando registro válido: {'id': 1, 'name': 'John', 'age': 30, 'city': 'Fortaleza', 'state': 'Ceara'}
+2024-11-22 21:52:57,105 - INFO - Processando registro válido: {'id': 2, 'name': 'Alice', 'age': 25, 'city': 'Sao Paulo', 'state': 'Sao Paulo'}
+2024-11-22 21:52:57,105 - WARNING - Registro inválido encontrado: {'id': 3, 'name': 'Bob', 'age': None, 'city': 'QuixadÃ¡', 'state': 'Ceara'}
+2024-11-22 21:52:57,106 - INFO - Processando registro válido: {'id': 4, 'name': 'Carol', 'age': 20, 'city': 'Rio de Janeiro', 'state': 'Rio de Janeiro'}
+2024-11-22 21:52:57,106 - INFO - Processando registro válido: {'id': 5, 'name': 'Daniel', 'age': 35, 'city': 'Manaus', 'state': 'Amazonas'}
+2024-11-22 21:53:00,378 - INFO - Arquivo JSON 'data.json' carregado com sucesso.
+2024-11-22 21:53:00,379 - INFO - Processando registro válido: {'id': 1, 'name': 'John', 'age': 30, 'city': 'Fortaleza', 'state': 'Ceara'}
+2024-11-22 21:53:00,379 - INFO - Processando registro válido: {'id': 2, 'name': 'Alice', 'age': 25, 'city': 'Sao Paulo', 'state': 'Sao Paulo'}
+2024-11-22 21:53:00,380 - WARNING - Registro inválido encontrado: {'id': 3, 'name': 'Bob', 'age': None, 'city': 'QuixadÃ¡', 'state': 'Ceara'}
+2024-11-22 21:53:00,381 - INFO - Processando registro válido: {'id': 4, 'name': 'Carol', 'age': 20, 'city': 'Rio de Janeiro', 'state': 'Rio de Janeiro'}
+2024-11-22 21:53:00,381 - INFO - Processando registro válido: {'id': 5, 'name': 'Daniel', 'age': 35, 'city': 'Manaus', 'state': 'Amazonas'}
+2024-11-22 21:58:59,536 - INFO - Arquivo JSON 'data.json' carregado com sucesso.
+2024-11-22 21:58:59,537 - INFO - Processando registro válido: {'id': 1, 'name': 'John', 'age': 30, 'city': 'Fortaleza', 'state': 'Ceara'}
+2024-11-22 21:58:59,537 - INFO - Processando registro válido: {'id': 2, 'name': 'Alice', 'age': 25, 'city': 'Sao Paulo', 'state': 'Sao Paulo'}
+2024-11-22 21:58:59,537 - WARNING - Registro inválido encontrado: {'id': 3, 'name': 'Bob', 'age': None, 'city': 'QuixadÃ¡', 'state': 'Ceara'}
+2024-11-22 21:58:59,537 - INFO - Processando registro válido: {'id': 4, 'name': 'Carol', 'age': 20, 'city': 'Rio de Janeiro', 'state': 'Rio de Janeiro'}
+2024-11-22 21:58:59,537 - INFO - Processando registro válido: {'id': 5, 'name': 'Daniel', 'age': 35, 'city': 'Manaus', 'state': 'Amazonas'}
+2024-11-22 21:58:59,537 - WARNING - Registro inválido encontrado: {'id': 6, 'name': 'Eva', 'age': None, 'city': 'Teresina', 'state': 'Piaui'}
+2024-11-22 21:59:14,453 - INFO - Arquivo JSON 'data.json' carregado com sucesso.
+2024-11-22 21:59:14,454 - INFO - Processando registro válido: {'id': 1, 'name': 'John', 'age': 30, 'city': 'Fortaleza', 'state': 'Ceara'}
+2024-11-22 21:59:14,454 - INFO - Processando registro válido: {'id': 2, 'name': 'Alice', 'age': 25, 'city': 'Sao Paulo', 'state': 'Sao Paulo'}
+2024-11-22 21:59:14,454 - WARNING - Registro inválido encontrado: {'id': 3, 'name': 'Bob', 'age': None, 'city': 'QuixadÃ¡', 'state': 'Ceara'}
+2024-11-22 21:59:14,454 - INFO - Processando registro válido: {'id': 4, 'name': 'Carol', 'age': 20, 'city': 'Rio de Janeiro', 'state': 'Rio de Janeiro'}
+2024-11-22 21:59:14,454 - INFO - Processando registro válido: {'id': 5, 'name': 'Daniel', 'age': 35, 'city': 'Manaus', 'state': 'Amazonas'}
+2024-11-22 21:59:14,454 - WARNING - Registro inválido encontrado: {'id': 6, 'name': 'Eva', 'age': None, 'city': 'Teresina', 'state': 'Piaui'}
+2024-11-22 21:59:20,242 - INFO - Arquivo JSON 'data.json' carregado com sucesso.
+2024-11-22 21:59:20,243 - INFO - Processando registro válido: {'id': 1, 'name': 'John', 'age': 30, 'city': 'Fortaleza', 'state': 'Ceara'}
+2024-11-22 21:59:20,243 - INFO - Processando registro válido: {'id': 2, 'name': 'Alice', 'age': 25, 'city': 'Sao Paulo', 'state': 'Sao Paulo'}
+2024-11-22 21:59:20,243 - WARNING - Registro inválido encontrado: {'id': 3, 'name': 'Bob', 'age': None, 'city': 'QuixadÃ¡', 'state': 'Ceara'}
+2024-11-22 21:59:20,243 - INFO - Processando registro válido: {'id': 4, 'name': 'Carol', 'age': 20, 'city': 'Rio de Janeiro', 'state': 'Rio de Janeiro'}
+2024-11-22 21:59:20,243 - INFO - Processando registro válido: {'id': 5, 'name': 'Daniel', 'age': 35, 'city': 'Manaus', 'state': 'Amazonas'}
+2024-11-22 21:59:20,243 - WARNING - Registro inválido encontrado: {'id': 6, 'name': 'Eva', 'age': None, 'city': 'Teresina', 'state': 'Piaui'}

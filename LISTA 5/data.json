@@ -1,0 +1,11 @@
+
+[
+    {"id": 1, "name": "John", "age": 30, "city": "Fortaleza", "state": "Ceara"},
+    {"id": 2, "name": "Alice", "age": 25, "city": "Sao Paulo", "state": "Sao Paulo"},
+    {"id": 3, "name": "Bob", "age": null, "city": "Quixadá", "state": "Ceara"},
+    {"id": 4, "name": "Carol", "age": 20, "city": "Rio de Janeiro", "state": "Rio de Janeiro"},
+    {"id": 5, "name": "Daniel", "age": 35, "city": "Manaus", "state": "Amazonas"},
+    {"id": 6, "name": "Eva", "age": null, "city": "Teresina", "state": "Piaui"}
+
+  ]
+
