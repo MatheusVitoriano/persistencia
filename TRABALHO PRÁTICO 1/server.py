@@ -1,9 +1,10 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel
 import csv
 import os
 import zipfile
 from fastapi.responses import FileResponse
+import hashlib
 
 app = FastAPI()
 
@@ -136,3 +137,49 @@ def compactar_csv_em_zip():
 
     # Retornar o arquivo ZIP para download
     return FileResponse(ARQUIVO_ZIP, media_type='application/zip', filename=ARQUIVO_ZIP)
+
+   # Rota para listar produtos com filtros
+# Rota para listar produtos com filtros
+@app.get("/produtos/teste/filtrar")
+def filtrar_produtos(
+    categoria: str = Query(None, description="Filtrar por categoria:"),
+    nome: str = Query(None, description="Filtrar por nome:"),
+    id: int = Query(None, description="Filtrar por id:")
+):
+    produtos = carregar_produtos()
+    
+    # Filtrar por categoria
+    if categoria:
+        produtos = [p for p in produtos if p["categoria"].lower() == categoria.lower()]
+
+    # Filtrar por nome
+    if nome is not None:
+        produtos = [p for p in produtos if p["nome"].lower() == nome.lower()]
+
+    # Filtrar por id
+    if id is not None:
+        produtos = [p for p in produtos if p["id"] == id]
+
+    if not produtos:
+        raise HTTPException(status_code=404, detail="Nenhum produto encontrado com os critérios fornecidos.")
+
+    return produtos
+
+
+# Rota para calcular o hash SHA256 do arquivo CSV
+@app.get("/produtos/arquivo/hash")
+def calcular_hash_csv():
+    # Verificar se o arquivo CSV existe
+    if not os.path.exists(ARQUIVO_CSV):
+        raise HTTPException(status_code=404, detail="Arquivo CSV não encontrado.")
+    
+    # Calcular o hash SHA256 do arquivo CSV
+    sha256_hash = hashlib.sha256()  # Inicializa o objeto hash
+    
+    with open(ARQUIVO_CSV, "rb") as file:
+        # Lê o arquivo em blocos de 4K para evitar grandes consumos de memória
+        for byte_block in iter(lambda: file.read(4096), b""):
+            sha256_hash.update(byte_block)  # Atualiza o hash com os dados lidos
+    
+    # Retornar o hash em formato hexadecimal
+    return {"hash_sha256": sha256_hash.hexdigest()}
