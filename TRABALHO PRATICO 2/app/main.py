@@ -2,6 +2,12 @@ from fastapi import FastAPI
 from app.database import engine
 from app.models import Base
 from app.logging_config import get_logger
+from app.database import init_db
+
+if __name__ == "__main__":
+    init_db()
+    print("Tabelas criadas com sucesso!")
+
 
 from app.routes.jogo_routes import router as jogo_router
 from app.routes.categoria_routes import router as categoria_router
@@ -45,3 +51,6 @@ def startup_event():
 @app.get("/")
 async def read_root():
     return {"message": "API está funcionando!"}
+
+
+

@@ -37,6 +37,8 @@ class CategoriaUpdate(BaseModel):
 
 class ClienteBase(BaseModel):
     nome: str
+    telefone: Optional[str]
+    data_nascimento: date
     email: str
 
 class ClienteCreate(ClienteBase):
@@ -52,8 +54,11 @@ class ClienteResponse(ClienteBase):
 
 class VendaBase(BaseModel):
     cliente_id: int
-    data: datetime
-    valor_total: float
+    data_venda: date 
+    valor: float
+    desconto: float
+    forma_de_pagamento: str
+
 
 class VendaCreate(VendaBase):
     pass
@@ -69,7 +74,7 @@ class VendaResponse(VendaBase):
 # Modelo Pydantic para Jogo (usado no relacionamento)
 class JogoBase(BaseModel):
     id: int
-    nome: str
+    nome: str;
 
     class Config:
         from_attributes = True  # Permite conversão de objetos SQLAlchemy para Pydantic

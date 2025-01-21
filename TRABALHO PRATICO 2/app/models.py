@@ -102,3 +102,7 @@ class Venda(Base):
 
     # Relacionamento com Cliente
     cliente = relationship("Cliente", back_populates="vendas")
+
+
+
+

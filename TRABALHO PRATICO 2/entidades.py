@@ -25,6 +25,32 @@ class Categoria(Base):
     jogos = relationship("Jogo", back_populates="categoria", cascade="all, delete-orphan")
 
 
+# Entidade Plataforma
+class Plataforma(Base):
+    __tablename__ = "plataformas"
+
+    id = Column(Integer, primary_key=True, autoincrement=True, index=True)
+    nome = Column(String(100), nullable=False)
+    fabricante = Column(String(100), nullable=False)
+    suporte_online = Column(Boolean, default=False, nullable=False)
+    tipo = Column(String(50), nullable=False)
+
+    # Relacionamento bidirecional com Jogo
+    jogos = relationship("Jogo", back_populates="plataforma", cascade="all, delete-orphan")
+
+
+# Entidade Desenvolvedor
+class Desenvolvedor(Base):
+    __tablename__ = "desenvolvedores"
+
+    id = Column(Integer, primary_key=True, autoincrement=True, index=True)
+    nome = Column(String(100), nullable=False)
+    pais_origem = Column(String(100), nullable=True)
+
+    # Relacionamento 1:1 com Jogo
+    jogo = relationship("Jogo", back_populates="desenvolvedor", uselist=False, cascade="all, delete-orphan")
+
+
 # Entidade Cliente
 class Cliente(Base):
     __tablename__ = "clientes"
@@ -57,38 +83,27 @@ class Venda(Base):
     jogos = relationship("Jogo", secondary=jogo_venda_associacao, back_populates="vendas")
 
 
-# Entidade Plataforma
-class Plataforma(Base):
-    __tablename__ = "plataformas"
-
-    id = Column(Integer, primary_key=True, autoincrement=True, index=True)
-    nome = Column(String(100), nullable=False)
-    fabricante = Column(String(100), nullable=False)
-    suporte_online = Column(Boolean, default=False, nullable=False)
-    tipo = Column(String(50), nullable=False)
-
-    # Relacionamento bidirecional com Jogo
-    jogos = relationship("Jogo", back_populates="plataforma", cascade="all, delete-orphan")
-
-
 # Entidade Jogo
 class Jogo(Base):
     __tablename__ = "jogos"
 
     id = Column(Integer, primary_key=True, autoincrement=True, index=True)
     nome = Column(String(150), nullable=False)
-    desenvolvedor = Column(String(100), nullable=False)
     estoque = Column(Integer, default=0, nullable=False)
     preco = Column(Float, nullable=False)
     data_lancamento = Column(Date, nullable=False)
 
-    # Relacionamento com Categoria
+    # Relacionamento com Categoria (1:N)
     categoria_id = Column(Integer, ForeignKey("categorias.id", ondelete="SET NULL"), nullable=True, index=True)
     categoria = relationship("Categoria", back_populates="jogos")
 
-    # Relacionamento bidirecional com Venda (muitos para muitos)
-    vendas = relationship("Venda", secondary=jogo_venda_associacao, back_populates="jogos")
-
-    # Relacionamento com Plataforma
+    # Relacionamento com Plataforma (1:N)
     plataforma_id = Column(Integer, ForeignKey("plataformas.id", ondelete="SET NULL"), nullable=True, index=True)
     plataforma = relationship("Plataforma", back_populates="jogos")
+
+    # Relacionamento com Desenvolvedor (1:1)
+    desenvolvedor_id = Column(Integer, ForeignKey("desenvolvedores.id", ondelete="CASCADE"), unique=True, nullable=True)
+    desenvolvedor = relationship("Desenvolvedor", back_populates="jogo")
+
+    # Relacionamento com Venda (N:N)
+    vendas = relationship("Venda", secondary=jogo_venda_associacao, back_populates="jogos")
