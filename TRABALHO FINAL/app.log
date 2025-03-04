@@ -1,0 +1,101 @@
+2025-03-03 22:20:57,953 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:21:05,360 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:21:05,546 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-03 22:23:41,709 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:25:47,990 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:27:14,641 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:28:18,608 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:28:34,600 - FastAPI-Logger - INFO - Buscando deputados com filtros: {} | Página: 1 | Tamanho: 10
+2025-03-03 22:34:13,374 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:34:17,119 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:34:36,814 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:34:37,690 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-03 22:36:19,801 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:36:30,825 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:36:34,456 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:36:49,675 - FastAPI-Logger - WARNING - Nenhum partido encontrado no banco de dados.
+2025-03-03 22:39:03,752 - FastAPI-Logger - INFO - Partido ID 0 cadastrado com sucesso.
+2025-03-03 22:42:08,582 - FastAPI-Logger - INFO - Partidos encontrados: 1
+2025-03-03 22:42:34,900 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:43:43,145 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:43:57,179 - FastAPI-Logger - INFO - Partidos encontrados: 1
+2025-03-03 22:44:27,906 - FastAPI-Logger - INFO - Partido ID 0 removido com sucesso.
+2025-03-03 22:46:05,205 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:46:19,751 - FastAPI-Logger - WARNING - Nenhum partido encontrado no banco de dados.
+2025-03-03 22:46:56,183 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:47:06,014 - FastAPI-Logger - WARNING - Nenhum partido encontrado no banco de dados.
+2025-03-03 22:51:20,480 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:51:35,924 - FastAPI-Logger - WARNING - Nenhum partido encontrado no banco de dados. Carregando da API...
+2025-03-03 22:51:38,716 - FastAPI-Logger - INFO - 15 partidos foram armazenados no banco de dados.
+2025-03-03 22:51:38,718 - FastAPI-Logger - INFO - Partidos encontrados: 15
+2025-03-03 22:53:35,796 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:53:58,137 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-03 22:54:08,816 - FastAPI-Logger - WARNING - Nenhum partido encontrado no banco de dados. Carregando da API...
+2025-03-03 22:54:09,281 - FastAPI-Logger - INFO - 15 partidos foram armazenados no banco de dados.
+2025-03-03 22:54:16,642 - FastAPI-Logger - WARNING - Nenhum partido encontrado no banco de dados. Carregando da API...
+2025-03-03 22:54:17,086 - FastAPI-Logger - INFO - 15 partidos foram armazenados no banco de dados.
+2025-03-03 22:54:42,620 - FastAPI-Logger - WARNING - Nenhum partido encontrado no banco de dados. Carregando da API...
+2025-03-03 22:54:43,063 - FastAPI-Logger - INFO - 15 partidos foram armazenados no banco de dados.
+2025-03-03 22:57:16,420 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 22:57:32,277 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-03 22:57:46,090 - FastAPI-Logger - INFO - Partidos encontrados: 15
+2025-03-03 22:58:05,135 - FastAPI-Logger - INFO - Partidos encontrados: 16
+2025-03-03 22:58:53,059 - FastAPI-Logger - INFO - Partidos encontrados: 17
+2025-03-03 23:00:53,533 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:01:06,783 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-03 23:01:11,335 - FastAPI-Logger - INFO - Partidos encontrados: 16
+2025-03-03 23:01:32,337 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:01:35,892 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:01:59,521 - FastAPI-Logger - INFO - Partidos encontrados: 16
+2025-03-03 23:03:37,881 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:03:45,922 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-03 23:03:53,670 - FastAPI-Logger - INFO - Partidos encontrados: 17
+2025-03-03 23:06:10,019 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:06:18,219 - FastAPI-Logger - INFO - Partidos encontrados: 17
+2025-03-03 23:07:16,716 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:07:24,468 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-03 23:07:36,512 - FastAPI-Logger - INFO - Partidos encontrados: 17
+2025-03-03 23:09:29,030 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:09:39,776 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:23:07,270 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:23:07,632 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-03 23:23:33,155 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-03 23:23:38,051 - FastAPI-Logger - INFO - Partidos encontrados: 15
+2025-03-03 23:23:56,803 - FastAPI-Logger - INFO - Partidos encontrados: 15
+2025-03-03 23:24:28,603 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:24:36,379 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-03 23:24:44,658 - FastAPI-Logger - INFO - Partidos encontrados: 15
+2025-03-03 23:25:00,252 - FastAPI-Logger - INFO - Partidos encontrados: 15
+2025-03-03 23:28:57,265 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:29:00,729 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:29:27,697 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:29:44,498 - FastAPI-Logger - INFO - Partidos encontrados: 1
+2025-03-03 23:36:38,695 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:37:06,697 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:41:11,829 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:41:16,207 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:42:28,258 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:42:35,753 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:42:39,482 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:43:04,323 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-03 23:43:07,905 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:25:01,154 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:25:04,061 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 13:25:38,939 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:29:43,647 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:32:33,954 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:32:38,384 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:32:52,837 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:32:56,047 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:37:13,338 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:40:57,204 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:44:44,306 - matplotlib.font_manager - INFO - generated new fontManager
+2025-03-04 13:44:54,636 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:45:06,722 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 13:48:31,734 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:52:38,128 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:57:11,297 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 13:58:11,910 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 14:00:50,893 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 14:00:51,315 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 14:02:52,757 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!

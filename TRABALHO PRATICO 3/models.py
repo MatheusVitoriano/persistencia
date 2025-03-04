@@ -49,3 +49,8 @@ class Jogo(BaseModel):
     categoria_id: str  # Referência a uma categoria
     plataforma_id: str  # Referência a uma plataforma
 
+# 1 categoria para 1 jogo
+# 1 jogo para 1 categoria
+
+# 1 cliente para N jogos
+
