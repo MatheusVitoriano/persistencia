@@ -4,7 +4,6 @@ from pymongo import MongoClient, errors
 from pydantic import BaseModel
 from typing import List, Dict, Optional
 from logger import logger  
-from datetime import datetime
 from fastapi.responses import JSONResponse
 from analise import gerar_grafico_deputados_por_partido, gerar_grafico_deputados_por_estado
 
@@ -18,7 +17,7 @@ projetos_collection = db["projetos"]
 
 BASE_URL = "https://dadosabertos.camara.leg.br/api/v2"
 
-# Modelo de dados
+# Modelo de dados (removido dataCadastro)
 class Deputado(BaseModel):
     id: int
     nome: str
@@ -28,31 +27,19 @@ class Deputado(BaseModel):
     idLegislatura: int
     urlFoto: str
     email: str
-    dataCadastro: Optional[str] = None  
 
 @router.get("/deputados", response_model=List[Deputado])
 def listar_deputados(
     nome: Optional[str] = Query(None, description="Filtrar por nome ou parte do nome"),
-    data_cadastro: Optional[str] = Query(None, description="Filtrar por data de cadastro (YYYY-MM-DD)"),
     skip: int = Query(0, description="Número de registros a serem pulados"),
     limit: int = Query(10, description="Número máximo de registros a serem retornados (máx: 50)")
 ):
-   
     try:
         filtros = {}
 
         # Filtro por nome (busca parcial, case-insensitive)
         if nome:
             filtros["nome"] = {"$regex": nome, "$options": "i"}
-
-        # Filtro por data de cadastro
-        if data_cadastro:
-            try:
-                data_formatada = datetime.strptime(data_cadastro, "%Y-%m-%d")
-                filtros["dataCadastro"] = {"$gte": data_formatada}
-            except ValueError:
-                logger.error("Erro: Formato de data inválido")
-                raise HTTPException(status_code=400, detail="Formato de data inválido. Use YYYY-MM-DD.")
 
         # Limite máximo para evitar sobrecarga
         limit = min(limit, 50)
@@ -71,7 +58,6 @@ def listar_deputados(
 
 @router.get("/deputados/{id}", response_model=Deputado)
 def obter_deputado(id: int):
-    
     try:
         deputado = deputados_collection.find_one({"id": id}, {"_id": 0})
         if not deputado:
@@ -86,13 +72,12 @@ def obter_deputado(id: int):
 
 @router.post("/deputados", response_model=Dict)
 def criar_deputado(deputado: Deputado):
-    
     try:
         if deputados_collection.find_one({"id": deputado.id}):
             logger.warning(f"Tentativa de cadastro duplicado para ID {deputado.id}")
             raise HTTPException(status_code=400, detail="Deputado já cadastrado")
 
-        deputado.dataCadastro = datetime.utcnow()  # Adiciona a data de cadastro automaticamente
+        # Não estamos mais adicionando a dataCadastro
         deputados_collection.insert_one(deputado.dict())
         
         logger.info(f"Deputado {deputado.nome} cadastrado com sucesso")
@@ -104,7 +89,6 @@ def criar_deputado(deputado: Deputado):
 
 @router.put("/deputados/{id}", response_model=Dict)
 def atualizar_deputado(id: int, deputado: Deputado):
-    
     try:
         resultado = deputados_collection.update_one({"id": id}, {"$set": deputado.dict()})
         if resultado.matched_count == 0:
@@ -120,7 +104,6 @@ def atualizar_deputado(id: int, deputado: Deputado):
 
 @router.delete("/deputados/{id}")
 def deletar_deputado(id: int):
-  
     try:
         resultado = deputados_collection.delete_one({"id": id})
         if resultado.deleted_count == 0:
@@ -136,26 +119,22 @@ def deletar_deputado(id: int):
 
 @router.get("/estatisticas/deputados-por-partido")
 def deputados_por_partido():
-   
     pipeline = [{"$group": {"_id": "$siglaPartido", "total": {"$sum": 1}}}, {"$sort": {"total": -1}}]
     resultado = list(deputados_collection.aggregate(pipeline))
     return {"deputados_por_partido": resultado}
 
 @router.get("/estatisticas/deputados-por-estado")
 def deputados_por_estado():
-  
     pipeline = [{"$group": {"_id": "$siglaUf", "total": {"$sum": 1}}}, {"$sort": {"total": -1}}]
     resultado = list(deputados_collection.aggregate(pipeline))
     return {"deputados_por_estado": resultado}
 
 @router.get("/estatisticas/grafico-deputados-por-partido")
 def grafico_deputados_por_partido():
-
     imagem_base64 = gerar_grafico_deputados_por_partido()
     return JSONResponse(content={"imagem": f"data:image/png;base64,{imagem_base64}"})
 
 @router.get("/estatisticas/grafico-deputados-por-estado")
 def grafico_deputados_por_estado():
-    
     imagem_base64 = gerar_grafico_deputados_por_estado()
     return JSONResponse(content={"imagem": f"data:image/png;base64,{imagem_base64}"})

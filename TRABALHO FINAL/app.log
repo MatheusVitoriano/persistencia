@@ -145,3 +145,53 @@
 2025-03-04 21:13:52,770 - FastAPI-Logger - INFO - Partidos encontrados: 10
 2025-03-04 21:14:02,046 - FastAPI-Logger - INFO - Partidos encontrados: 16
 2025-03-04 21:14:22,580 - FastAPI-Logger - INFO - Partido ID 0 removido com sucesso.
+2025-03-04 21:18:06,006 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:20:58,127 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:21:57,751 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:29:39,796 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:29:40,244 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 21:29:51,923 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 21:33:50,165 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:33:55,345 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:34:05,107 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:34:05,455 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 21:34:49,166 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:34:53,585 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 21:41:58,071 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:42:51,732 - FastAPI-Logger - INFO - Consulta realizada com 10 resultados
+2025-03-04 21:43:09,189 - FastAPI-Logger - INFO - Consulta realizada com 50 resultados
+2025-03-04 21:44:04,733 - FastAPI-Logger - INFO - Deputado Matheus cadastrado com sucesso
+2025-03-04 21:44:52,872 - FastAPI-Logger - INFO - Deputado encontrado: Matheus
+2025-03-04 21:45:30,906 - FastAPI-Logger - INFO - Deputado encontrado: Zucco
+2025-03-04 21:45:53,710 - FastAPI-Logger - INFO - Deputado encontrado: Matheus
+2025-03-04 21:49:39,650 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:49:53,396 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:49:53,796 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 21:50:18,281 - FastAPI-Logger - WARNING - Tentativa de cadastro duplicado para ID 1234
+2025-03-04 21:50:35,986 - FastAPI-Logger - INFO - Deputado string cadastrado com sucesso
+2025-03-04 21:50:46,316 - FastAPI-Logger - INFO - Deputado encontrado: string
+2025-03-04 21:50:52,033 - FastAPI-Logger - INFO - Deputado encontrado: Matheus
+2025-03-04 21:52:25,372 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:52:37,958 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:52:38,372 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 21:52:54,823 - FastAPI-Logger - INFO - Deputado encontrado: Matheus
+2025-03-04 21:53:13,138 - FastAPI-Logger - INFO - Deputado 1234 removido com sucesso
+2025-03-04 21:53:16,679 - FastAPI-Logger - INFO - Deputado 12345 removido com sucesso
+2025-03-04 21:57:33,873 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:57:35,882 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 21:58:40,731 - FastAPI-Logger - INFO - Consulta realizada com 10 resultados
+2025-03-04 21:58:53,315 - FastAPI-Logger - INFO - Consulta realizada com 50 resultados
+2025-03-04 22:00:05,356 - FastAPI-Logger - INFO - Deputado Matheus cadastrado com sucesso
+2025-03-04 22:00:45,869 - FastAPI-Logger - INFO - Deputado encontrado: Matheus
+2025-03-04 22:01:04,747 - FastAPI-Logger - INFO - Deputado encontrado: Zucco
+2025-03-04 22:01:33,505 - FastAPI-Logger - INFO - Deputado 1234 removido com sucesso
+2025-03-04 22:05:19,637 - FastAPI-Logger - INFO - Buscando votações com filtros: {} | Página: 1 | Tamanho: 20
+2025-03-04 22:06:46,811 - FastAPI-Logger - INFO - Votação ID 0 cadastrada com sucesso.
+2025-03-04 22:07:37,804 - FastAPI-Logger - INFO - Buscando votação com ID: 0
+2025-03-04 22:08:02,886 - FastAPI-Logger - INFO - Votação ID 0 atualizada com sucesso.
+2025-03-04 22:08:42,730 - FastAPI-Logger - INFO - Votação ID 1234 removida com sucesso.
+2025-03-04 22:09:12,463 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-04 22:09:31,389 - FastAPI-Logger - INFO - Partidos encontrados: 15
+2025-03-04 22:10:20,512 - FastAPI-Logger - INFO - Partido ID 47 cadastrado com sucesso.
+2025-03-04 22:10:55,634 - FastAPI-Logger - WARNING - Tentativa de deletar partido ID 16, mas ele não foi encontrado.
+2025-03-04 22:11:13,296 - FastAPI-Logger - INFO - Partido ID 47 removido com sucesso.
