@@ -99,3 +99,49 @@
 2025-03-04 14:00:50,893 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
 2025-03-04 14:00:51,315 - FastAPI-Logger - INFO - Rota raiz acessada.
 2025-03-04 14:02:52,757 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 15:05:08,008 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 15:05:10,402 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 15:25:13,462 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 15:25:18,267 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 15:34:24,978 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-04 15:35:51,612 - FastAPI-Logger - INFO - Partido ID 1234 cadastrado com sucesso.
+2025-03-04 15:36:03,010 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-04 15:37:04,489 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-04 15:37:32,661 - FastAPI-Logger - INFO - Partido ID 1234 removido com sucesso.
+2025-03-04 21:01:47,726 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:01:49,450 - FastAPI-Logger - INFO - Rota raiz acessada.
+2025-03-04 21:02:06,058 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:02:14,768 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:02:33,181 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:02:39,333 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:02:48,683 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:02:56,046 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:03:02,289 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:03:08,563 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:03:13,571 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:03:41,071 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:05:45,581 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:05:52,779 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:06:00,502 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:06:06,594 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:06:14,106 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:06:20,284 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:06:27,249 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:06:35,527 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:06:40,804 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:06:48,626 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:06:55,070 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:07:00,263 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:07:28,882 - FastAPI-Logger - INFO - Consulta realizada com 10 resultados
+2025-03-04 21:09:04,519 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:09:09,219 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:09:16,151 - FastAPI-Logger - INFO - API da Câmara dos Deputados iniciada!
+2025-03-04 21:09:31,787 - FastAPI-Logger - INFO - Consulta realizada com 10 resultados
+2025-03-04 21:10:59,350 - FastAPI-Logger - INFO - Consulta realizada com 50 resultados
+2025-03-04 21:11:14,577 - FastAPI-Logger - INFO - Deputado string cadastrado com sucesso
+2025-03-04 21:12:06,382 - FastAPI-Logger - INFO - Deputado 0 removido com sucesso
+2025-03-04 21:12:53,574 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-04 21:13:23,438 - FastAPI-Logger - INFO - Partido ID 0 cadastrado com sucesso.
+2025-03-04 21:13:52,770 - FastAPI-Logger - INFO - Partidos encontrados: 10
+2025-03-04 21:14:02,046 - FastAPI-Logger - INFO - Partidos encontrados: 16
+2025-03-04 21:14:22,580 - FastAPI-Logger - INFO - Partido ID 0 removido com sucesso.
